@@ -50,7 +50,6 @@ public class ImageFragment extends Fragment {
         View view = inflater.inflate(R.layout.fragment_image, container, false);
 
         unbinder = ButterKnife.bind(this, view);
-
         imgView.setImageResource(image);
 
         return view;

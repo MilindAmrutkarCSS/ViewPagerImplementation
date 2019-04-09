@@ -7,32 +7,32 @@
 
     <LinearLayout
         android:id="@+id/viewPagerDots"
-        android:gravity="top|center"
-        android:orientation="horizontal"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="10dp">
+        android:layout_marginTop="10dp"
+        android:gravity="top|center"
+        android:orientation="horizontal">
 
     </LinearLayout>
 
     <androidx.viewpager.widget.ViewPager
         android:id="@+id/viewPager"
-        android:background="#99E7B0"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"/>
+        android:layout_height="match_parent"
+        android:background="#99E7B0" />
 
     <Button
         android:id="@+id/btnNext"
-        android:text="Next"
-        android:layout_gravity="bottom|end"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:text="Next" />
 
     <Button
         android:id="@+id/btnSkip"
-        android:text="Skip"
-        android:layout_gravity="bottom|start"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|start"
+        android:text="Skip" />
 
 </FrameLayout>

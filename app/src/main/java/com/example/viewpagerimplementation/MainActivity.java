@@ -31,7 +31,6 @@ public class MainActivity extends AppCompatActivity {
 
     private ImageView[] imageView;
 
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -51,7 +50,7 @@ public class MainActivity extends AppCompatActivity {
 
             @Override
             public void onPageSelected(int position) {
-                for (int i = 0; i < FragmentPagerAdapter.NUM_ITEMS ; i++) {
+                for (int i = 0; i < FragmentPagerAdapter.NUM_ITEMS; i++) {
                     imageView[i].setImageResource(R.drawable.unselected_page);
                 }
                 imageView[position].setImageResource(R.drawable.selected_page);
@@ -83,7 +82,7 @@ public class MainActivity extends AppCompatActivity {
     public void onViewClicked(View view) {
         switch (view.getId()) {
             case R.id.btnNext:
-                //Toast.makeText(this, "Next", Toast.LENGTH_SHORT).show();
+
                 if (viewPager.getCurrentItem() == (NUM_ITEMS - 1)) {
                     Toast.makeText(this, "This is the last one", Toast.LENGTH_SHORT).show();
                 } else {
@@ -93,7 +92,7 @@ public class MainActivity extends AppCompatActivity {
                 break;
 
             case R.id.btnSkip:
-                //Toast.makeText(this, "Skip", Toast.LENGTH_SHORT).show();
+
                 Intent intent = new Intent(this, SecondActivity.class);
                 startActivity(intent);
                 break;

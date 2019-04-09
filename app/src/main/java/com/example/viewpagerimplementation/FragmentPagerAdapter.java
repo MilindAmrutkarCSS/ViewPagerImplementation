@@ -5,7 +5,7 @@ import androidx.fragment.app.FragmentManager;
 
 public class FragmentPagerAdapter extends androidx.fragment.app.FragmentPagerAdapter {
 
-    public static int NUM_ITEMS = 3;
+    public static int NUM_ITEMS = 4;
 
     public FragmentPagerAdapter(FragmentManager fm) {
         super(fm);
@@ -22,6 +22,9 @@ public class FragmentPagerAdapter extends androidx.fragment.app.FragmentPagerAda
 
             case 2:
                 return ImageFragment.newInstance(R.drawable.hospital);
+
+            case 3:
+                return ImageFragment.newInstance(R.drawable.injection);
 
             default:
                 return null;
